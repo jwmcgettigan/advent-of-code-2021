@@ -4,6 +4,7 @@ import argparse
 
 parser = argparse.ArgumentParser(description="Execute code for a specific AoC day.")
 parser.add_argument("-d", "--day", help="The day whose code will be executed.", type=int)
+#parser.add_argument("-p", "--part", help="The portion of a day's code that will be executed.", type=int)
 args = parser.parse_args()
 
 chosen_day = args.day
