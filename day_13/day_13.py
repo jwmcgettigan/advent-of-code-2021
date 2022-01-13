@@ -42,6 +42,6 @@ class Day13:
 			return file.read()
 
 
-day12 = Day13()
-day12.part1()
-day12.part2()
+day13 = Day13()
+day13.part1()
+day13.part2()

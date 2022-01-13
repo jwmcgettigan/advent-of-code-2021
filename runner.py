@@ -27,9 +27,12 @@ if chosen_day and generate:
 		os.mkdir(directory)
 		os.chdir(f'./day_{chosen_day}')
 		for file in files:
-			with open(file, 'w') as fp:
-				pass
+			if not os.path.isfile(file):
+				with open(file, 'w') as fp:
+					pass
 
 # Improve this file by:
 # - dynamically importing the relevant file
 # and then selectively running part 1 or part 2 from that file (or class)
+# - also selectively running certain inputs (e.g. mock_input.txt or input.txt)
+# although for this I should improve the input selection method with a class or something
